@@ -10,8 +10,8 @@
         data: textile_default_data.merge(
           allow_dropdown: @evidence.new_record?,
           autosave_key: "#{current_project.id}-evidence-#{ @evidence.persisted? ? "edit-#{@evidence.id}" : "new-for-#{@node.id}" }",
-          behavior: 'auto-save rich-toolbar',
-          'rich-toolbar': 'block-code bold field italic link list-ol list-ul table'
+          behavior: 'auto-save rich-toolbar drop-zone',
+          'rich-toolbar': 'block-code bold field image italic link list-ol list-ul table'
         ),
         rows: 20
       }
